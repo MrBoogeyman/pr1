@@ -33,7 +33,13 @@ namespace pr1
                 myCar.SpeedUp(5);
                 myCar.PrintState();
             }
+            // Усадим на Motorcycle байкера по имени Tiny?
+            Motorcycle c = new Motorcycle(5);
+            c.SetDriverName("Tiny");
+            c.PopAWheely();
+            Console.WriteLine("Rider name is {0}", c.name); //Выводит пустое значение name!
             Console.ReadLine();
         }
+
     }
 }

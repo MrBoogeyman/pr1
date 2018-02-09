@@ -33,10 +33,9 @@ namespace pr1
         }
 
         // Функциональность Car.
-        {
         public void PrintState ()
         {
-           Console.WriteLine("{0} is going {1} MPH.", petName, currSpeed)
+            Console.WriteLine("{0} is going {1} MPH.", petName, currSpeed);
         }
             public void SpeedUp (int delta)
         {
@@ -45,4 +44,3 @@ namespace pr1
 
         }
     }
-}
