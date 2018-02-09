@@ -38,6 +38,12 @@ namespace pr1
             c.SetDriverName("Tiny");
             c.PopAWheely();
             Console.WriteLine("Rider name is {0}", c.name); //Выводит пустое значение name!
+           
+            //Подвезем Trucks с водилой Ron
+            Trucks b = new Trucks(2);
+            b.SetVodila("Ron");
+            b.PopAWheely();
+            Console.WriteLine("Trucks name is {0}", b.name); 
             Console.ReadLine();
         }
 
