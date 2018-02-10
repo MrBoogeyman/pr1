@@ -19,7 +19,7 @@ namespace pr1
         public Trucks(string name)
             : this(0, name) { }
 
-        public Trucks(int intensity, string name)
+        public Trucks(int intensity = 0, string name = "")
         {
             if (intensity > 10)
             {
@@ -48,5 +48,6 @@ namespace pr1
                 Console.WriteLine("Vrum, Vrum mothefucker!");
             }
         }
+      
     }
 }
