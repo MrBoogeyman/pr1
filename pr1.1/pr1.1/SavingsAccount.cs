@@ -16,8 +16,14 @@ namespace pr1._1
         public static Double currInterestRate = 0.04;
         public SavingsAccount(double balance)
         {
-            currInterestRate = 0.04; // Это статические данные!
+            
             currBalance = balance;
+        }
+        // Статический конструктор
+        static SavingsAccount()
+        {
+            Console.WriteLine("In static ctor!");
+            currInterestRate = 0.04;
         }
         
         // Статические члены для установки/получения процентной ставки.
